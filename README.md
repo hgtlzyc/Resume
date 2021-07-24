@@ -77,6 +77,22 @@ class StateCenter: ObservableObject {
 
 ```
 
+ used flatMap to limit the calls to API, maxTasks set to 1 and delay set to 0.1s, 
+
+```swift
+     .flatMap(maxPublishers: .max(maxTasks)) { urlString -> AnyPublisher<PokemonDataModel, AppError> in
+         do {
+             let publisher = try generateSinglePokemonDMPublisher(urlString)
+             return publisher
+                 .delay(for: .seconds(delayInSeconds), scheduler: DispatchQueue(label: urlString))
+                 .eraseToAnyPublisher()
+
+         } catch let err {
+             return Fail<PokemonDataModel, AppError>(error: AppError.networkError(err)).eraseToAnyPublisher()
+         }
+     }
+```
+
 <br />
 
 
