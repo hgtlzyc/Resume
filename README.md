@@ -1,7 +1,7 @@
  
 ## AppStore:
 
-### CarLocator using Augmented Reality (2020) [AppStore Link](https://apps.apple.com/us/app/sure-car-locator-with-ar/id1495605423) | [Video Demo](https://youtu.be/TvZPVcpJHlg)
+### CarLocator using Augmented Reality [AppStore Link](https://apps.apple.com/us/app/sure-car-locator-with-ar/id1495605423) | [Video Demo](https://youtu.be/TvZPVcpJHlg)
 *screen capture will be smoother after fully loaded <br />
 ![](https://github.com/hgtlzyc/Resume/blob/887760c686ae67f6f6fbe565043187616c99eeb1/ScreenCaptures/CarLocatorGIF.gif)
 <br />*screen capture will be smoother after fully loaded <br />
@@ -11,7 +11,7 @@
  - Admob
  - [Lottie](https://github.com/airbnb/lottie-ios) 
  - Data Persistence
- - Blender
+ - Blender (3D Modeling)
  - Sketch
  - After Affects
 
@@ -205,6 +205,15 @@ struct NumberPrinter {
 <br />
 
 ## Study Notes [Github Repo](https://github.com/hgtlzyc/StudyNotes)
+[Swift](https://github.com/hgtlzyc/StudyNotes/tree/main/Swift)
+[JavaScript](https://github.com/hgtlzyc/StudyNotes/tree/main/JS)
+[Java](https://github.com/hgtlzyc/StudyNotes/tree/main/Java)
+[Python](https://github.com/hgtlzyc/StudyNotes/tree/main/Python)
+[React](https://github.com/hgtlzyc/StudyNotes/tree/main/React)
+[Ruby](https://github.com/hgtlzyc/StudyNotes/tree/main/Ruby)
+[SQL](https://github.com/hgtlzyc/StudyNotes/tree/main/SQL)
+[Web](https://github.com/hgtlzyc/StudyNotes/tree/main/Web)
+
 #### Screen Capture
 ![](https://github.com/hgtlzyc/Resume/blob/6fb36f3ee8df04af76692bf668b02d5f770f6ad9/ScreenCaptures/StudyNotes.png)
 
