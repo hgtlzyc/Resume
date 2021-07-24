@@ -4,6 +4,7 @@
 ### CarLocator using Augmented Reality (2020) [AppStore Link](https://apps.apple.com/us/app/sure-car-locator-with-ar/id1495605423) | [Video Demo](https://youtu.be/TvZPVcpJHlg)
 *screen capture will be smoother after fully loaded <br />
 ![](https://github.com/hgtlzyc/Resume/blob/887760c686ae67f6f6fbe565043187616c99eeb1/ScreenCaptures/CarLocatorGIF.gif)
+<br />*screen capture will be smoother after fully loaded <br />
  - ARKit
  - MapKit
  - CoreLocation
