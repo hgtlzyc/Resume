@@ -48,12 +48,10 @@ class StateCenter: ObservableObject {
     }
             
     func executeAction(_ action: AppAction) {
-        DispatchQueue.main.async {
-            let result = self.reduce(state: self.appState, action: action)
-            self.appState = result.newState
-            guard let command = result.newCommand else { return }
-            command.execute(in: self)
-        }
+          let result = self.reduce(state: self.appState, action: action)
+          self.appState = result.newState
+          guard let command = result.newCommand else { return }
+          command.execute(in: self)
     }
     
     private func reduce(state: AppStates, action: AppAction) -> (newState: AppStates, newCommand: AppCommand?) {
