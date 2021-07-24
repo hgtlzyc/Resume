@@ -1,33 +1,33 @@
-# Resume
  
-### AppStore:
+## AppStore:
 
-#### CarLocator using Augmented Reality (2020) [AppStore Link](https://apps.apple.com/us/app/sure-car-locator-with-ar/id1495605423) | [Video Demo](https://youtu.be/TvZPVcpJHlg)
+### CarLocator using Augmented Reality (2020) [AppStore Link](https://apps.apple.com/us/app/sure-car-locator-with-ar/id1495605423) | [Video Demo](https://youtu.be/TvZPVcpJHlg)
+![](https://github.com/hgtlzyc/Resume/blob/887760c686ae67f6f6fbe565043187616c99eeb1/ScreenCaptures/CarLocatorGIF.gif)
  - ARKit
  - MapKit
  - CoreLocation
  - Admob
- - 3rd party Library [Lottie](https://github.com/airbnb/lottie-ios) 
+ - [Lottie](https://github.com/airbnb/lottie-ios) 
  - Data Persistence
  - Blender
  - Sketch
  - After Affects
- 
 
-### Recent Projects:
+<br />
 
-#### Pokemon Display [Github Repo](https://github.com/hgtlzyc/PokemonDisplay)
+
+## Pokemon Display [Github Repo](https://github.com/hgtlzyc/PokemonDisplay)
+
+![](https://github.com/hgtlzyc/PokemonDisplay/blob/225c53fc4e3f02d16c9ea43c0d93ae59aa1241a5/screenRecording.gif)
+
  - SwiftUI
  - Combine
  - Property Wrapper
  - Data Persistence
  - JSON Decode/Encode
  - API Calls
- 
 
-![](https://github.com/hgtlzyc/PokemonDisplay/blob/225c53fc4e3f02d16c9ea43c0d93ae59aa1241a5/screenRecording.gif)
-
-Code snippet:
+#### Code snippet:
 ```swift
 import Foundation
 import Combine
@@ -77,12 +77,13 @@ class StateCenter: ObservableObject {
 
 ```
 
+<br />
 
 
-#### Color Master [Github Repo](https://github.com/hgtlzyc/ColorMaster)
+## Color Master [Github Repo](https://github.com/hgtlzyc/ColorMaster)
 ![](https://github.com/hgtlzyc/ColorMaster/blob/ad6c900f7d95c53ab39b07c909f9aa9d4dd37352/ScreenCapture.gif)
 
-Code snippet:
+#### Code snippet:
 ```swift
 struct ColorController {
 
@@ -115,8 +116,10 @@ struct ColorController {
 ```
 
 
+<br />
 
-#### Number Printer [Github Repo](https://github.com/hgtlzyc/NumberPrinter)
+
+## Number Printer [Github Repo](https://github.com/hgtlzyc/NumberPrinter)
 
 ![](https://github.com/hgtlzyc/NumberPrinter/blob/e3c97c30f9e5e29276a877744c8291d1048454aa/NumberPrinterDemo.gif)
 
@@ -136,7 +139,7 @@ For example, if pass 257 the console might look something like this:
  ---         ---              |
 ```
 
-Code snippet:
+#### Code snippet:
 ```swift
 import Foundation
 
@@ -183,6 +186,7 @@ struct NumberPrinter {
 ```
 
 
+<br />
 
 
 
