@@ -25,7 +25,7 @@
  - Property Wrapper
  - Data Persistence
  - JSON Decode/Encode
- - API Calls
+ - API Calls [PokeAPI](https://pokeapi.co/)
 
 #### Code snippet:
 ```swift
@@ -188,6 +188,9 @@ struct NumberPrinter {
 
 <br />
 
+## Study Notes [Github Repo](https://github.com/hgtlzyc/StudyNotes)
+#### Screen Capture
+![](https://github.com/hgtlzyc/Resume/blob/6fb36f3ee8df04af76692bf668b02d5f770f6ad9/ScreenCaptures/StudyNotes.png)
 
 
 
