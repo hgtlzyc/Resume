@@ -1,7 +1,9 @@
 ## Skills:
-UIKit | SwiftUI | Combine | Notifications | ARKit | MapKit | CoreData |  
+UIKit | CoreData | SwiftUI | Combine  
+Firebase | Notifications | JSON | API | Admob  
+ARKit | SceneKit | MapKit 
 <br />
-Firebase | JSON | API | Admob | SceneKit | Blender | Sketch | AfterEffects
+Blender | Sketch | AfterEffects
 
 
 ## AppStore:
@@ -208,16 +210,60 @@ struct NumberPrinter {
 
 <br />
 
-## Study Notes [Github Repo](https://github.com/hgtlzyc/StudyNotes)
+# Study Notes [Github Repo](https://github.com/hgtlzyc/StudyNotes)
 [Swift](https://github.com/hgtlzyc/StudyNotes/tree/main/Swift)
+<br />
 [JavaScript](https://github.com/hgtlzyc/StudyNotes/tree/main/JS)
+<br />
 [Java](https://github.com/hgtlzyc/StudyNotes/tree/main/Java)
+<br />
 [Python](https://github.com/hgtlzyc/StudyNotes/tree/main/Python)
+<br />
 [React](https://github.com/hgtlzyc/StudyNotes/tree/main/React)
+<br />
 [Ruby](https://github.com/hgtlzyc/StudyNotes/tree/main/Ruby)
+<br />
 [SQL](https://github.com/hgtlzyc/StudyNotes/tree/main/SQL)
+<br />
 [Web](https://github.com/hgtlzyc/StudyNotes/tree/main/Web)
 
+# Books Read
+[Combine: Asynchronous Programming with Swift](https://www.raywenderlich.com/books/combine-asynchronous-programming-with-swift)
+<br />
+[Advanced Swift](https://www.objc.io/books/advanced-swift/)
+<br />
+[SwiftUI 与 Combine 编程](https://objccn.io/products/swift-ui)
+<br />
+[Swift in Depth](https://www.manning.com/books/swift-in-depth?gclid=EAIaIQobChMI3f_xzN2A8gIVFozICh2j0gGZEAAYAiAAEgIB8_D_BwE)
+<br />
+[Mastering Swift 5](https://www.packtpub.com/free-ebook/mastering-swift-5-fifth-edition/9781789139860)
+<br />
+[Expert Swift](https://www.raywenderlich.com/books/expert-swift)
+<br />
+[Swifter - Swift 开发者必备 Tips](https://objccn.io/products/swifter-tips)
+<br />
+[SwiftUI Apprentice](https://www.raywenderlich.com/books/swiftui-apprentice)
+<br />
+[SwiftUI by Tutorials](https://www.raywenderlich.com/books/swiftui-by-tutorials)
+<br />
+[Apple Augmented Reality by Tutorials](https://www.raywenderlich.com/books/apple-augmented-reality-by-tutorials)
+<br />
+<br />
+
+
+# Python Projects
+Inventory System [Vide Demo](https://youtu.be/3U18vwzImSo)
+ - Tinker
+ - SQL
+ - Raspberry Pi
+
+<br />
+
+Info Statin [Video Demo](https://youtu.be/2j16hJu1nSY)
+ - AutoCAD
+ - 3D Printing
+ - Linux
+ - GPIO ports
 
 
 
