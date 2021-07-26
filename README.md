@@ -1,4 +1,9 @@
- 
+## Skills:
+UIKit | SwiftUI | Combine | Notifications | ARKit | MapKit | CoreData |  
+<br />
+Firebase | JSON | API | Admob | SceneKit | Blender | Sketch | AfterEffects
+
+
 ## AppStore:
 
 ### CarLocator using Augmented Reality [AppStore Link](https://apps.apple.com/us/app/sure-car-locator-with-ar/id1495605423) | [Video Demo](https://youtu.be/TvZPVcpJHlg)
@@ -13,10 +18,9 @@
  - Data Persistence
  - Blender (3D Modeling)
  - Sketch
- - After Affects
+ - After Effects
 
 <br />
-
 
 ## Pokemon Display [Github Repo](https://github.com/hgtlzyc/PokemonDisplay)
 
@@ -214,8 +218,6 @@ struct NumberPrinter {
 [SQL](https://github.com/hgtlzyc/StudyNotes/tree/main/SQL)
 [Web](https://github.com/hgtlzyc/StudyNotes/tree/main/Web)
 
-#### Screen Capture
-![](https://github.com/hgtlzyc/Resume/blob/6fb36f3ee8df04af76692bf668b02d5f770f6ad9/ScreenCaptures/StudyNotes.png)
 
 
 
