@@ -106,8 +106,7 @@ class StateCenter: ObservableObject {
  - CoreData
  - Error Handling
 
-####Code Snippet
-```Swift
+#### Code Snippet
 ```swift
 //MARK: - Raw Data sorting related
 extension EventListTableViewController {
