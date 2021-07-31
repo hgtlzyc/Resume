@@ -101,7 +101,6 @@ class StateCenter: ObservableObject {
 
 <br />
 
-
 ## Color Master [Github Repo](https://github.com/hgtlzyc/ColorMaster)
 ![](https://github.com/hgtlzyc/ColorMaster/blob/ad6c900f7d95c53ab39b07c909f9aa9d4dd37352/ScreenCapture.gif)
 
@@ -139,6 +138,10 @@ struct ColorController {
 
 
 <br />
+
+## Events Reminder [Github Repo](https://github.com/hgtlzyc/EventsCoreData)
+ - User Notification
+ - CoreData
 
 
 ## Number Printer [Github Repo](https://github.com/hgtlzyc/NumberPrinter)
