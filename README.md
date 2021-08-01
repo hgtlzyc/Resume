@@ -3,6 +3,8 @@ UIKit | CoreData | SwiftUI | Combine
 Firebase | Notifications | JSON | API | Admob  
 ARKit | SceneKit | MapKit 
 <br />
+Localization | Chinese
+<br />
 Blender | Sketch | AfterEffects
 
 
@@ -21,6 +23,7 @@ Blender | Sketch | AfterEffects
  - Blender (3D Modeling)
  - Sketch
  - After Effects
+ - Localization
 
 <br />
 
