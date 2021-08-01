@@ -1,14 +1,18 @@
-## Skills:
+# Skills:
 UIKit | CoreData | SwiftUI | Combine  
-Firebase | Notifications | JSON | API | Admob  
+Firebase | Notifications | JSON | RESTful API | Admob  
 ARKit | SceneKit | MapKit 
 <br />
-Localization | Chinese
+MVC Architecture Pattern | Dispatch (GCD)
+<br />
+Storyboards | AutoLayout | Localization 
 <br />
 Blender | Sketch | AfterEffects
+<br />
+Git | Github
 
 
-## AppStore:
+# AppStore:
 
 ### CarLocator using Augmented Reality [AppStore Link](https://apps.apple.com/us/app/sure-car-locator-with-ar/id1495605423) | [Video Demo](https://youtu.be/TvZPVcpJHlg)
 *screen capture will be smoother after fully loaded <br />
@@ -27,7 +31,7 @@ Blender | Sketch | AfterEffects
 
 <br />
 
-## Pokemon Display [Github Repo](https://github.com/hgtlzyc/PokemonDisplay)
+# Pokemon Display [Github Repo](https://github.com/hgtlzyc/PokemonDisplay)
 
 ![](https://github.com/hgtlzyc/PokemonDisplay/blob/225c53fc4e3f02d16c9ea43c0d93ae59aa1241a5/screenRecording.gif)
 
@@ -104,7 +108,7 @@ class StateCenter: ObservableObject {
 
 <br />
 
-## Events Reminder [Github Repo](https://github.com/hgtlzyc/EventsCoreData)
+# Events Reminder [Github Repo](https://github.com/hgtlzyc/EventsCoreData)
  - User Notification
  - CoreData
  - Error Handling
