@@ -1,6 +1,6 @@
 # Skills:
 UIKit | CoreData | SwiftUI | Combine  
-Firebase | Notifications | JSON | RESTful API | Admob  
+Firebase | Notifications | JSON | API | Admob  
 ARKit | SceneKit | MapKit 
 <br />
 MVC Architecture Pattern | Dispatch (GCD)
@@ -118,47 +118,6 @@ class StateCenter: ObservableObject {
 //MARK: - Raw Data sorting related
 extension EventListTableViewController {
     
-    enum EventsSortingProperty{
-        case date
-    }
-    
-    enum SortingError: Error {
-        case nilDateInArray(message: String,eventSet: Set<Event>)
-    }
-    
-    ///Changing the Value of events: [Event]!, does NOT check tableView.hasUncommittedUpdates
-    func loadEvents(reloadTable: Bool, sortBy: EventsSortingProperty = .date, isAssending: Bool = false) {
-        let eventsRaw = EventController.shared.getEvents()
-        
-        var sortedEvents: [Event]?
-        
-        switch sortBy {
-        case .date:
-            sortedEventsByDate(from: eventsRaw, isAssending: isAssending){ result in
-                switch result {
-                case let .success(events):
-                    sortedEvents = events
-                case let .failure( .nilDateInArray(message,eventSet) ):
-                    //TODO change to user alerts
-                    print(message)
-                    print(eventSet)
-                }
-            }//end of .date
-            
-        }//end or switch
-        
-        switch sortedEvents {
-        case let sortedEvents?:
-            self.events = sortedEvents
-            
-        case nil:
-            self.events = []
-            
-        }//end of switch
-        
-        if reloadTable { tableView.reloadData() }
-    }
-    
     func sortedEventsByDate(from eventsRaw: [Event], isAssending: Bool, completion: (_ result:  Result<[Event], SortingError>) -> Void) {
         let validDatesCount = eventsRaw.compactMap{$0.eventDate}.count
         
@@ -198,7 +157,7 @@ extension EventListTableViewController {
         
     }//End Of sortedEventsByDate
     
-    // MARK: - bug info helper
+    // MARK: - info helper
     func findEventsWithNilDate(_ rawEvents: [Event]) -> Set<Event>{
         let validEvents = Set( rawEvents.filter{$0.eventDate != nil} )
         let rawEvents = Set( rawEvents )
@@ -317,8 +276,13 @@ struct NumberPrinter {
  
 ```
 
-
 <br />
+
+# More Codes I wrote [Github Repo](https://github.com/hgtlzyc/Playgrounds/tree/main)
+ - Using Combine for nested API calls [Link](https://github.com/hgtlzyc/Playgrounds/blob/54f54837c85335f53c8c37390c43c812c9939f29/API.playground/Pages/UseCombine.xcplaygroundpage/Contents.swift)
+ - Convert to Result Type for error handling [Link](https://github.com/hgtlzyc/Playgrounds/blob/54f54837c85335f53c8c37390c43c812c9939f29/API.playground/Pages/UseResultForErrorHandling.xcplaygroundpage/Contents.swift)
+ - Find unique max value in array [Link](https://github.com/hgtlzyc/Playgrounds/blob/main/Array.playground/Pages/findUniqueMax.xcplaygroundpage/Contents.swift)
+ - Code Challanges
 
 # Study Notes [Github Repo](https://github.com/hgtlzyc/StudyNotes)
 [Swift](https://github.com/hgtlzyc/StudyNotes/tree/main/Swift)
