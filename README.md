@@ -3,7 +3,7 @@ UIKit | CoreData | SwiftUI | Combine
 Firebase | Notifications | JSON | API | Admob  
 ARKit | SceneKit | MapKit 
 <br />
-MVC Architecture Pattern | Dispatch (GCD)
+MVC Architecture Pattern | MVVM | Dispatch (GCD)
 <br />
 Storyboards | AutoLayout | Localization 
 <br />
