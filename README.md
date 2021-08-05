@@ -109,7 +109,7 @@ class StateCenter: ObservableObject {
 <br />
 
 # Quiz App based on data from NHTSA API [Github Repo](https://github.com/hgtlzyc/AllVehicleModelsAPI)
-![](https://github.com/hgtlzyc/AllVehicleModelsAPI/blob/c4d9fea06c1b46a759db85939296e5dd5a1e39c4/nhtsaAPIScreenCapture.gif)
+![](https://github.com/hgtlzyc/AllVehicleModelsAPI/blob/286bf07f5032e464b79e8b27d518ea0c8442a776/screenRecording.gif)
 <br/>
 - UIKit 
 - NHTSA (National Highway Traffic Safety Administration) API [Link](https://vpic.nhtsa.dot.gov/api/)
