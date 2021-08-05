@@ -379,8 +379,8 @@ struct NumberPrinter {
 # More Codes I wrote [Github Repo](https://github.com/hgtlzyc/Playgrounds/tree/main)
  - Using Combine for nested API calls [Link](https://github.com/hgtlzyc/Playgrounds/blob/54f54837c85335f53c8c37390c43c812c9939f29/API.playground/Pages/UseCombine.xcplaygroundpage/Contents.swift)
  - Convert to Result Type for error handling [Link](https://github.com/hgtlzyc/Playgrounds/blob/54f54837c85335f53c8c37390c43c812c9939f29/API.playground/Pages/UseResultForErrorHandling.xcplaygroundpage/Contents.swift)
- - Find unique max value in array [Link](https://github.com/hgtlzyc/Playgrounds/blob/main/Array.playground/Pages/findUniqueMax.xcplaygroundpage/Contents.swift)
- - Code Challanges
+ - Find unique min/max value in array (generic) [Link](https://github.com/hgtlzyc/Playgrounds/blob/main/README.md#find-unique-minmax-value-in-array-generic)
+ - Other Code Challanges
 
 # Study Notes [Github Repo](https://github.com/hgtlzyc/StudyNotes)
 [Swift](https://github.com/hgtlzyc/StudyNotes/tree/main/Swift)
