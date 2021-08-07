@@ -1,3 +1,5 @@
+contact me: Lijia@vt.edu
+
 # Skills:
 UIKit | CoreData | SwiftUI | Combine  
 Firebase | Notifications | JSON | API | Admob  
