@@ -111,10 +111,11 @@ class StateCenter: ObservableObject {
 <br />
 
 # Live Search From API Using Combine [Github Repo](https://github.com/hgtlzyc/MovieSearchAPI)
-![](https://github.com/hgtlzyc/MovieSearchAPI/blob/2908d440d020a293f93d8950e418eb0edf22c3e5/MovieSearch.gif)
+![](https://github.com/hgtlzyc/MovieSearchAPI/blob/1df048ba7fe97726bf9abc648904cf077a0e4d2b/LiveMovieSearchScreenRecording.gif)
  - API
  - Combine
  - URL Session
+ - Cache
  <br />
  used Combine to do Live search, with .debounce will not putting much stress to the API, 
  removeDuplicates will prevent calling the same values 
