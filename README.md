@@ -1,4 +1,4 @@
-contact me: Lijia@vt.edu
+Contact Me: Lijia@vt.edu
 
 # Skills:
 UIKit | CoreData | SwiftUI | Combine  
