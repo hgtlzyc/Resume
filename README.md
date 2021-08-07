@@ -113,6 +113,10 @@ class StateCenter: ObservableObject {
  - API
  - Combine
  - URL Session
+ <br />
+ used Combine to do Live search, with .debounce will not putting much stress to the API, 
+ removeDuplicates will prevent calling the same values 
+ Also able to handle timed out requests with .share()
 
 #### Code snippet:
 ```swift
