@@ -144,7 +144,7 @@ class StateCenter: ObservableObject {
     func setupCombine(){
         guard subscriptions.isEmpty else { return }
         
-        //debounce the search to the 'debounceInSeconds' and reduce the API calls
+        //debounce the search based on the 'debounceInSeconds' and reduce the API calls
         //also remove duplicate calls
         let filteredPublisher = searchKeyPublisher
             .debounce(for: .seconds(debounceInSeconds), scheduler: DispatchQueue.global())
@@ -176,12 +176,12 @@ class StateCenter: ObservableObject {
 ```
 
 # Quiz App based on data from NHTSA API [Github Repo](https://github.com/hgtlzyc/AllVehicleModelsAPI)
-![](https://github.com/hgtlzyc/AllVehicleModelsAPI/blob/07397146fabe2191e5b10ad7192601314249c439/screenRecording.gif)
+![](https://github.com/hgtlzyc/AllVehicleModelsAPI/blob/7ff7611ec3cbc466874f06001e136fab7018f015/screenCapture.gif)
 <br/>
-- UIKit 
+- MVVM
 - NHTSA (National Highway Traffic Safety Administration) API [Link](https://vpic.nhtsa.dot.gov/api/)
 - URLSession
-- MVVM
+- Animation
 
 #### Code snippet:
 
@@ -212,10 +212,11 @@ class VehicleModelsViewModel {
     var makeName: String?
     
     // MARK: - read
+    //Strings
     var statusString: String {
         let correntlyAnsweredCount = targetAnswers.intersection(userAnswered).count
-        let wrongAnswetsCount = userAnswered.subtracting(targetAnswers).count
-        return "\(targetAnswers.count) models, you got \(correntlyAnsweredCount) correct, \(wrongAnswetsCount) wrong"
+        let totalTriesCount = userAnswered.count
+        return "\(targetAnswers.count) models, \(correntlyAnsweredCount) correct, tried \(totalTriesCount) times"
     }
     
     var sortedCurrentlyCorrectAnswers: [(String,Bool)] {
@@ -229,6 +230,11 @@ class VehicleModelsViewModel {
         return baseSetSortAndMap(correntlyAnsweredSet, status: true) + baseSetSortAndMap(currentlyWrongSet, status: false)
     }
     
+    //Ints
+    var worngAnswersCount: Int {
+        return targetAnswers.subtracting(userAnswered).count
+    }
+    
     // MARK: - write
     func resetForNextQuestion(){
         userAnswered = Set<String>()
@@ -236,8 +242,10 @@ class VehicleModelsViewModel {
         makeName = nil
     }
     
-    func newUserAnswered(_ string: String) {
+    ///put the string in the user answered set, returns bool indicates if the user answer is correct
+    func newUserAnswered(_ string: String) -> Bool {
         userAnswered.insert(string)
+        return targetAnswers.contains(string)
     }
     
     func setCorrectAnswers(_ answerArr: [String]) {
@@ -253,21 +261,41 @@ class VehicleModelsViewModel {
     
 }//End Of ViewModel
 
-//in the ViewController
-// MARK: - String related
-func generateTargetAnswersBasedOn(_ models: [VehicleModel]) -> [String]{
-    return models.map{ model in
-        generateFilteredString(model.modelName)
-    }
-}
+//In The ViewController Extension
+ //MARK: -AnmationHelper
+    func animateStatusLabelBasedOn(_ isCorrect: Bool ) {
+        let baseColor = statusLabel.layer.backgroundColor
+        let duration = 0.5
+        var tempColor: UIColor!
+        var affineTransform: CGAffineTransform?
+        
+        switch isCorrect {
+        case true:
+            tempColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
+            affineTransform = CGAffineTransform(scaleX: 1.05, y: 1.05)
+            
+        case false:
+            tempColor = #colorLiteral(red: 1, green: 0.2897925377, blue: 0.2962183654, alpha: 0.6548947704)
+            affineTransform = nil
+            ///extension in CALayer, keyframeAnimation using keypath
+            statusLabel.layer.shake(withDuration: duration)
+        }
 
-func generateFilteredString(_ baseString: String) -> String {
-    return baseString
-            .uppercased()
-            .filter{
-                String($0).range(of: "[A-Z0-9]", options: .regularExpression) != nil
+        UIView.animate(withDuration: duration) {
+            UIView.modifyAnimations(withRepeatCount: 1, autoreverses: true) {
+                self.statusLabel.layer.backgroundColor = tempColor.cgColor
+                if let trans = affineTransform {
+                    self.statusLabel.transform = trans
+                }
             }
-}//
+           
+        }completion: { _ in
+            self.statusLabel.layer.backgroundColor = baseColor
+            self.statusLabel.transform = CGAffineTransform.identity
+            self.statusLabel.layer.removeAllAnimations()
+        }
+        
+    }//End Of animateStatusLabel
     
 ```
 
@@ -340,6 +368,9 @@ extension EventListTableViewController {
 ![](https://github.com/hgtlzyc/ColorMaster/blob/ad6c900f7d95c53ab39b07c909f9aa9d4dd37352/ScreenCapture.gif)
 
 #### Code snippet:
+ - UIKit
+ - Collection View
+ 
 ```swift
 struct ColorController {
 
@@ -376,6 +407,7 @@ struct ColorController {
 
 
 ## Number Printer [Github Repo](https://github.com/hgtlzyc/NumberPrinter)
+ - Code Challenges
 
 ![](https://github.com/hgtlzyc/NumberPrinter/blob/e3c97c30f9e5e29276a877744c8291d1048454aa/NumberPrinterDemo.gif)
 
