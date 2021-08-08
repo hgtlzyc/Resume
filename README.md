@@ -263,39 +263,42 @@ class VehicleModelsViewModel {
 
 //In The ViewController Extension
  //MARK: -AnmationHelper
-    func animateStatusLabelBasedOn(_ isCorrect: Bool ) {
-        let baseColor = statusLabel.layer.backgroundColor
-        let duration = 0.5
-        var tempColor: UIColor!
-        var affineTransform: CGAffineTransform?
-        
-        switch isCorrect {
-        case true:
-            tempColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1)
-            affineTransform = CGAffineTransform(scaleX: 1.05, y: 1.05)
-            
-        case false:
-            tempColor = #colorLiteral(red: 1, green: 0.2897925377, blue: 0.2962183654, alpha: 0.6548947704)
-            affineTransform = nil
-            ///extension in CALayer, keyframeAnimation using keypath
-            statusLabel.layer.shake(withDuration: duration)
+func animateStatusLabelBasedOn(_ isCorrect: Bool,
+                               colorForCorrect: UIColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1),
+                               colorForWrong:UIColor = #colorLiteral(red: 1, green: 0.2897925377, blue: 0.2962183654, alpha: 0.6548947704),
+                               duration: Double = 0.5) {
+
+    let baseColor = statusLabel.layer.backgroundColor
+    var tempColor: UIColor!
+    var affineTransform: CGAffineTransform?
+
+    switch isCorrect {
+    case true:
+        tempColor = colorForCorrect
+        affineTransform = CGAffineTransform(scaleX: 1.05, y: 1.05)
+
+    case false:
+        tempColor = colorForWrong
+        affineTransform = nil
+        ///extension in CALayer, keyframeAnimation using keypath
+        statusLabel.layer.shake(withDuration: duration)
+    }
+
+    UIView.animate(withDuration: duration) {
+        UIView.modifyAnimations(withRepeatCount: 1, autoreverses: true) {
+            self.statusLabel.layer.backgroundColor = tempColor.cgColor
+            if let trans = affineTransform {
+                self.statusLabel.transform = trans
+            }
         }
 
-        UIView.animate(withDuration: duration) {
-            UIView.modifyAnimations(withRepeatCount: 1, autoreverses: true) {
-                self.statusLabel.layer.backgroundColor = tempColor.cgColor
-                if let trans = affineTransform {
-                    self.statusLabel.transform = trans
-                }
-            }
-           
-        }completion: { _ in
-            self.statusLabel.layer.backgroundColor = baseColor
-            self.statusLabel.transform = CGAffineTransform.identity
-            self.statusLabel.layer.removeAllAnimations()
-        }
-        
-    }//End Of animateStatusLabel
+    }completion: { _ in
+        self.statusLabel.layer.backgroundColor = baseColor
+        self.statusLabel.transform = CGAffineTransform.identity
+        self.statusLabel.layer.removeAllAnimations()
+    }
+
+}//End Of animateStatusLabel
     
 ```
 
