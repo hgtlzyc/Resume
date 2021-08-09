@@ -262,12 +262,11 @@ class VehicleModelsViewModel {
 }//End Of ViewModel
 
 //In The ViewController Extension
- //MARK: -AnmationHelper
+//MARK: -AnmationHelper
 func animateStatusLabelBasedOn(_ isCorrect: Bool,
                                colorForCorrect: UIColor = #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1),
                                colorForWrong:UIColor = #colorLiteral(red: 1, green: 0.2897925377, blue: 0.2962183654, alpha: 0.6548947704),
                                duration: Double = 0.5) {
-
     let baseColor = statusLabel.layer.backgroundColor
     var tempColor: UIColor!
     var affineTransform: CGAffineTransform?
@@ -292,10 +291,10 @@ func animateStatusLabelBasedOn(_ isCorrect: Bool,
             }
         }
 
-    }completion: { _ in
-        self.statusLabel.layer.backgroundColor = baseColor
-        self.statusLabel.transform = CGAffineTransform.identity
-        self.statusLabel.layer.removeAllAnimations()
+    } completion: { [weak self] _ in
+        self?.statusLabel.layer.backgroundColor = baseColor
+        self?.statusLabel.transform = CGAffineTransform.identity
+        self?.statusLabel.layer.removeAllAnimations()
     }
 
 }//End Of animateStatusLabel
