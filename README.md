@@ -268,7 +268,7 @@ func animateStatusLabelBasedOn(_ isCorrect: Bool,
                                colorForWrong:UIColor = #colorLiteral(red: 1, green: 0.2897925377, blue: 0.2962183654, alpha: 0.6548947704),
                                duration: Double = 0.5) {
     let baseColor = statusLabel.layer.backgroundColor
-    var tempColor: UIColor!
+    var tempColor: UIColor
     var affineTransform: CGAffineTransform?
 
     switch isCorrect {
