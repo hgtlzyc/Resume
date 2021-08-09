@@ -118,8 +118,10 @@ class StateCenter: ObservableObject {
  - Cache
  <br />
  used Combine to do Live search, with .debounce will not putting much stress to the API, 
- removeDuplicates will prevent calling the same values 
- Also able to handle timed out requests with .share()
+ <br />
+ .removeDuplicates will prevent calling the same values 
+ <br />
+ Also able to handle timed out requests with .share() and .debounce
 
 #### Code snippet:
 ```swift
