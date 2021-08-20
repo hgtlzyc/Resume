@@ -2,7 +2,7 @@ Contact Me: Lijia@vt.edu
 
 # Skills:
 UIKit | CoreData | SwiftUI | Combine  
-Firebase | Notifications | JSON | API | Admob  
+CloudKit | Firebase | Notifications | JSON | API | Admob  
 ARKit | SceneKit | MapKit 
 <br />
 MVC Architecture Pattern | MVVM | Dispatch (GCD)
