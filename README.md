@@ -303,16 +303,14 @@ func animateStatusLabelBasedOn(_ isCorrect: Bool,
     
 ```
 
-# PairRandomizer
+# PairRandomizer [Github Repo](https://github.com/hgtlzyc/PairRandomizer)
 - Generate random groups based on the target group size
+- Change target group size
 - Rearrange the list
 - Delete/Add Names
 - Persistance 
 
 ![](https://github.com/hgtlzyc/PairRandomizer/blob/d60b063ce473a05d5e284c725942711acde81692/ScreenCapture.gif)
-
-Code Snippet:
-[Names Controller Link](https://github.com/hgtlzyc/PairRandomizer/blob/main/PairRandomizer/PairRandomizer/Controllers/ModelControllers/NamesController.swift)
 
 
 # Events Reminder [Github Repo](https://github.com/hgtlzyc/EventsCoreData)
