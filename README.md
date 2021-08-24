@@ -545,6 +545,7 @@ struct NumberPrinter {
  - Convert to Result Type for error handling [Link](https://github.com/hgtlzyc/Playgrounds/blob/54f54837c85335f53c8c37390c43c812c9939f29/API.playground/Pages/UseResultForErrorHandling.xcplaygroundpage/Contents.swift)
  - Find unique min/max value in array (generic) [Link](https://github.com/hgtlzyc/Playgrounds/blob/main/README.md#find-unique-minmax-value-in-array-generic)
  - Ordered Dictionary with Copy On Write [Link](https://github.com/hgtlzyc/Playgrounds/blob/main/README.md#ordered-dictionary-with-copy-on-write)
+ - Count Consecutive Elements in Array [Link](https://github.com/hgtlzyc/Playgrounds/blob/main/README.md#count-consecutive-elements)
  - Other Code Challanges
 
 # Study Notes [Github Repo](https://github.com/hgtlzyc/StudyNotes)
