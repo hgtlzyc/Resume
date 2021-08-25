@@ -474,9 +474,9 @@ extension BaseViewController: ActionSheetViewDelegate {
 *prototype, lines will be smoother with actual data points collected from device
 <br />
 <br/>
-![](https://github.com/hgtlzyc/MultiColorMapOverlay/blob/ca0554257cc63974c294d47310ebe190bf02873d/ScreenCapture.gif)
+![](https://github.com/hgtlzyc/MultiColorMapOverlay/blob/051abdaebcefcede27329b6c4e87f83f600d5fda/ScreenRecording.gif)
 
-*next: CoreGraphics generate imagelayer with cache system for potentialy better performance and more information
+*NEXT: CoreGraphics generate imagelayer with cache system for potentialy better performance and more information
 
 
 ## Number Printer [Github Repo](https://github.com/hgtlzyc/NumberPrinter)
