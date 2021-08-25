@@ -476,7 +476,7 @@ extension BaseViewController: ActionSheetViewDelegate {
 <br/>
 ![](https://github.com/hgtlzyc/MultiColorMapOverlay/blob/289a1c382ad96779af8822258df9c9abffa36da9/ScreenCapture.gif)
 
-*next: using imagelayer for potentialy better performance
+*next: CoreGraphics generate imagelayer with cache system for potentialy better performance and more information
 
 
 ## Number Printer [Github Repo](https://github.com/hgtlzyc/NumberPrinter)
