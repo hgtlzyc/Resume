@@ -474,7 +474,7 @@ extension BaseViewController: ActionSheetViewDelegate {
 *prototype, lines will be smoother with actual data points collected from device
 <br />
 <br/>
-![](https://github.com/hgtlzyc/MultiColorMapOverlay/blob/289a1c382ad96779af8822258df9c9abffa36da9/ScreenCapture.gif)
+![](https://github.com/hgtlzyc/MultiColorMapOverlay/blob/ca0554257cc63974c294d47310ebe190bf02873d/ScreenCapture.gif)
 
 *next: CoreGraphics generate imagelayer with cache system for potentialy better performance and more information
 
