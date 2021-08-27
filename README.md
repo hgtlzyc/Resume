@@ -37,7 +37,7 @@ Git | Github
 *lines will be smoother with actual data points collected from device
 <br />
 <br/>
-![](https://github.com/hgtlzyc/MultiColorMapOverlay/blob/623be7fdb8956831c78b8df8c50a3efa11811c2a/ScreenCapture.gif)
+![](https://github.com/hgtlzyc/MultiColorMapOverlay/blob/2c78af0cb50f697965c4a64067e74e5229f8a89d/ScreenRecording.gif)
 
 ```swift
 //filter the locations based on difference between nearby locations to increase performance
