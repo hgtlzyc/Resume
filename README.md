@@ -110,6 +110,14 @@ class StateCenter: ObservableObject {
 
 <br />
 
+
+# MultiColorMapOverlay [Github Link](https://github.com/hgtlzyc/MultiColorMapOverlay)
+*lines will be smoother with actual data points collected from device
+<br />
+<br/>
+![](https://github.com/hgtlzyc/MultiColorMapOverlay/blob/623be7fdb8956831c78b8df8c50a3efa11811c2a/ScreenCapture.gif)
+
+
 # Live Search From API Using Combine [Github Repo](https://github.com/hgtlzyc/MovieSearchAPI)
 ![](https://github.com/hgtlzyc/MovieSearchAPI/blob/1df048ba7fe97726bf9abc648904cf077a0e4d2b/LiveMovieSearchScreenRecording.gif)
  - API
@@ -469,14 +477,6 @@ extension BaseViewController: ActionSheetViewDelegate {
 }///End Of ActionSheetViewDelegate
         
 ```
-
-# MultiColorMapOverlay [Github Link](https://github.com/hgtlzyc/MultiColorMapOverlay)
-*prototype, lines will be smoother with actual data points collected from device
-<br />
-<br/>
-![](https://github.com/hgtlzyc/MultiColorMapOverlay/blob/051abdaebcefcede27329b6c4e87f83f600d5fda/ScreenRecording.gif)
-
-*NEXT: CoreGraphics generate imagelayer with cache system for potentialy better performance and more information
 
 
 ## Number Printer [Github Repo](https://github.com/hgtlzyc/NumberPrinter)
