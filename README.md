@@ -33,6 +33,154 @@ Git | Github
 
 <br />
 
+# MultiColorMapOverlay [Github Link](https://github.com/hgtlzyc/MultiColorMapOverlay)
+*lines will be smoother with actual data points collected from device
+<br />
+<br/>
+![](https://github.com/hgtlzyc/MultiColorMapOverlay/blob/623be7fdb8956831c78b8df8c50a3efa11811c2a/ScreenCapture.gif)
+
+```swift
+//filter the locations based on difference between nearby locations to increase performance
+private func filterBasedOnDifference(baseArray: [CLLocation], distance: Double) -> [CLLocation] {
+  var runningRef: CLLocation?
+
+  return baseArray.reduce(into: [CLLocation]()) { sum, next in
+
+    switch runningRef {
+    case let runningRef?:
+      guard next.distance(from: runningRef) >= distance else { return }
+      fallthrough
+
+    case nil :
+      runningRef = next
+      sum.append(next)
+
+    }///End of  switch
+
+  }///End of  reduce
+
+}///End of  func
+
+//map HearRateModel to closest CLLocation based on the timestamp
+struct HeartRate {
+  let rate: Int
+  let date: Date
+}
+
+struct MapHeartRateDisplayModel {
+  let heartRatesWithLocsAndZ: [(HeartRate,CLLocation,Int)]
+  
+  init?(heartRates: [HeartRate], referenceLocations: [CLLocation], maxTimeDifference: Double, baseZIndex: Int = 100) {
+    
+    var runningLocationPool = referenceLocations
+    
+    let ratesWithLocs = heartRates.reduce(into: [(HeartRate,CLLocation)]() ) { sum, next in
+      
+      guard let locationIndex = runningLocationPool.firstIndex(where: { loc in
+        if #available(iOS 13.0, *) {
+          return fabs( loc.timestamp.distance(to: next.date) ) <= maxTimeDifference
+        } else {
+          return fabs(loc.timestamp.timeIntervalSince1970 - next.date.timeIntervalSince1970) <= maxTimeDifference
+        }
+      }) else { return }
+      
+      sum.append( (next,runningLocationPool[locationIndex]) )
+      
+      runningLocationPool.remove(at: locationIndex)
+    }///End of  reduce
+    
+    guard !ratesWithLocs.isEmpty else { return nil }
+    
+    self.heartRatesWithLocsAndZ = zip(
+      (baseZIndex ..< baseZIndex + ratesWithLocs.count), ratesWithLocs
+    )
+    .reduce(into: [(HeartRate,CLLocation,Int)]()) { sum, next in
+      sum.append((next.1.0, next.1.1, next.0))
+    }
+    
+  }///End of  init
+  
+}///End of  MapDisplayVM
+
+
+//Sample Usage:
+extension MapViewController {
+  
+  private func clearAndGenerateDemoRoute(isInitialLoad: Bool) {
+    if isInitialLoad == false {
+      mapView.removeOverlays(mapView.overlays)
+      mapView.removeAnnotations(mapView.annotations)
+    }
+    
+    let baseDemoLocations = generateDemoLocations(
+      baseOn: sample2DCoordinates,
+      inSpeedRange: (1.0...6.0),
+      dateMaxInterval: 100
+    )
+    
+    let filteredLocations = filterBasedOnDifference(baseArray: baseDemoLocations, distance: 0)
+    
+    //Start End Annotation
+    guard let startCoordinate = baseDemoLocations.first?.coordinate else { return }
+    
+    let startAnnotation = EndPointAnnotation(
+      coordinate: startCoordinate,
+      title: startPointTitle,
+      subtitle: "DemoStartSubTitle",
+      type: .start
+    )
+
+    let endAnnotation = EndPointAnnotation(
+      coordinate: baseDemoLocations.last!.coordinate,
+      title: endPointTitle,
+      subtitle: "DemoEndSubTitle",
+      type: .end
+    )
+    
+    mapView.addAnnotation(startAnnotation)
+    mapView.addAnnotation(endAnnotation)
+    
+    //Heart Rate Annotation
+    let demoHeartRateDivider: Int = 1
+    
+    let demoHeartRates = generateRandomHeartRates(
+      count: filteredLocations.count/demoHeartRateDivider,
+      heartRateRange: (55...180),
+      maxDateInterval: 100.0
+    )
+    
+    if let mapHRModel = MapHeartRateDisplayModel(
+      heartRates: demoHeartRates,
+      referenceLocations: filteredLocations,
+      maxTimeDifference: 30,
+      baseZIndex: 3
+    ) {
+      
+      let heartRateAnnotations = mapHRModel.heartRatesWithLocsAndZ.map { (rateModel, loc, zIndex) in
+        return HeartRateAnnotation(heartRate: rateModel.rate, date: rateModel.date, coordinate: loc.coordinate, zIndex: zIndex)
+      }
+      
+      mapView.addAnnotations(heartRateAnnotations)
+      
+    } else {
+      print("no matching result")
+      
+    }///End of  if let mapHRModel else
+    
+    //Route
+    let testRoute = GradientPolyline(locations: filteredLocations, Ref_MAX: 5.0, Ref_MIN: 2.0)
+    
+    var mapRegion = testRoute.boundingMapRect
+    increaseBoundingRectBy(percent: 0.25, for: &mapRegion)
+    
+    mapView.setRegion(MKCoordinateRegion.init(mapRegion), animated: false)
+    
+    mapView.addOverlay(testRoute, level: .aboveLabels)
+    
+  }///End of  clearAndGenerateDemoRoute
+
+```
+
 # Pokemon Display [Github Repo](https://github.com/hgtlzyc/PokemonDisplay)
 
 ![](https://github.com/hgtlzyc/PokemonDisplay/blob/225c53fc4e3f02d16c9ea43c0d93ae59aa1241a5/screenRecording.gif)
@@ -109,13 +257,6 @@ class StateCenter: ObservableObject {
 ```
 
 <br />
-
-
-# MultiColorMapOverlay [Github Link](https://github.com/hgtlzyc/MultiColorMapOverlay)
-*lines will be smoother with actual data points collected from device
-<br />
-<br/>
-![](https://github.com/hgtlzyc/MultiColorMapOverlay/blob/623be7fdb8956831c78b8df8c50a3efa11811c2a/ScreenCapture.gif)
 
 
 # Live Search From API Using Combine [Github Repo](https://github.com/hgtlzyc/MovieSearchAPI)
