@@ -1,6 +1,6 @@
 Contact Me: Lijia@vt.edu
 
-**Resume content last updated: Sep 3, 2021
+# Resume content last updated: Sep 3, 2021
 
 # Skills:
 UIKit | CoreData | SwiftUI | Combine  
