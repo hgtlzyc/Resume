@@ -35,7 +35,7 @@ Git | Github
 
 <br />
 
-# MultiColorMapOverlay [Link](https://github.com/hgtlzyc/MultiColorMapOverlay)
+# MultiColorMapOverlay [Github Repo](https://github.com/hgtlzyc/MultiColorMapOverlay)
 *lines will be smoother with actual data points collected from device
 <br />
 <br/>
