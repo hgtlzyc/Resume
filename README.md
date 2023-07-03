@@ -1,7 +1,7 @@
 Contact Me: Lijia@vt.edu
 
 # Recent Personal Project
-Live Activity tracking GPS infos and using Swift Charts represent live data and summary
+Live Activity tracking GPS infos and using Swift Charts represent live data collected
 
 <img width="254" alt="image" src="https://github.com/hgtlzyc/Resume/assets/37933183/048fb5bc-91cc-4e25-8c9f-c7cb7adc4297">
 
