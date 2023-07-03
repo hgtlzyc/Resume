@@ -11,8 +11,8 @@ https://github.com/hgtlzyc/Resume/assets/37933183/db861868-7ad5-4896-bcd6-d081b3
 
 
 
+# for more recent projects please see my cover letter
 # content below last updated: Sep 3, 2021
-# for recent projects please see my cover letter
 
 # Skills:
 UIKit | CoreData | SwiftUI | Combine  
