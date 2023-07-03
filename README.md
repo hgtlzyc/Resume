@@ -1,5 +1,16 @@
 Contact Me: Lijia@vt.edu
 
+# Recent Personal Project
+Live Activity tracking GPS infos and using Swift Charts represent live data
+
+<img width="254" alt="image" src="https://github.com/hgtlzyc/Resume/assets/37933183/048fb5bc-91cc-4e25-8c9f-c7cb7adc4297">
+
+
+https://github.com/hgtlzyc/Resume/assets/37933183/db861868-7ad5-4896-bcd6-d081b357ec66
+
+
+
+
 # content below last updated: Sep 3, 2021
 # for recent projects please see my cover letter
 
