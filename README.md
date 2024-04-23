@@ -42,7 +42,8 @@ Git | Github
 *lines will be smoother with actual data points collected from device
 <br />
 <br/>
-![](https://github.com/hgtlzyc/MultiColorMapOverlay/blob/2c78af0cb50f697965c4a64067e74e5229f8a89d/ScreenRecording.gif)
+![ScreenRecording](https://github.com/hgtlzyc/Resume/assets/37933183/30a08b39-f5bc-4cdb-9222-9ddcb3c20e20)
+
 
 # Pokemon Display [Github Repo](https://github.com/hgtlzyc/PokemonDisplay)
 
