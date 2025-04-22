@@ -1,4 +1,4 @@
-Contact Me: Lijia@vt.edu
+Contact Me: hgtlzycwk@gmail.com
 
 # App:
 ### CarLocator using Augmented Reality [AppStore Link](https://apps.apple.com/us/app/id1495605423)
