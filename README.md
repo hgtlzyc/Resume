@@ -1,26 +1,6 @@
 Contact Me: Lijia@vt.edu
 
-# Recent Personal Project
-Live Activity tracking GPS infos and using Swift Charts represent live data collected [Github Repo](https://github.com/hgtlzyc/LiveActivitySandboxes)
-
-https://github.com/hgtlzyc/Resume/assets/37933183/db861868-7ad5-4896-bcd6-d081b357ec66
-
-# Skills:
-UIKit | CoreData | SwiftUI | Combine  
-CloudKit | Firebase | Notifications | JSON | API | Admob  
-ARKit | SceneKit | MapKit 
-<br />
-MVC Architecture Pattern | MVVM | Dispatch (GCD)
-<br />
-Storyboards | AutoLayout | Localization 
-<br />
-Blender | Sketch | AfterEffects
-<br />
-Git | Github
-
-
 # App:
-
 ### CarLocator using Augmented Reality [AppStore Link](https://apps.apple.com/us/app/id1495605423)
 *screen capture will be smoother after fully loaded <br />
 ![](https://github.com/hgtlzyc/Resume/blob/887760c686ae67f6f6fbe565043187616c99eeb1/ScreenCaptures/CarLocatorGIF.gif)
@@ -38,7 +18,14 @@ Git | Github
 
 <br />
 
-# MultiColorMapOverlay
+#### Note: Focused on self-learning over the past two years through books, videos, and articles.
+
+# Live Activity
+tracking GPS infos and using Swift Charts represent live data collected [Github Repo](https://github.com/hgtlzyc/LiveActivitySandboxes)
+
+https://github.com/hgtlzyc/Resume/assets/37933183/db861868-7ad5-4896-bcd6-d081b357ec66
+
+# MultiColorMapOverlay [Github Repo](https://github.com/hgtlzyc/MultiColorMapOverlay)
 *lines will be smoother with actual data points collected from device
 <br />
 <br/>
@@ -615,6 +602,19 @@ Info Statin [Video Demo](https://youtu.be/2j16hJu1nSY)
  - 3D Printing
  - Linux
  - GPIO ports
+
+# Skills:
+SwiftUI | UIKit | SwiftData | Combine | Charts
+CloudKit | Firebase | Notifications | JSON | API | Admob  
+ARKit | SceneKit | MapKit 
+<br />
+MVC Architecture Pattern | MVVM | Dispatch (GCD)
+<br />
+Storyboards | AutoLayout | Localization 
+<br />
+Blender | Sketch | AfterEffects
+<br />
+Git | Github
 
 
 
