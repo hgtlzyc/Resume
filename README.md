@@ -25,12 +25,21 @@ tracking GPS infos and using Swift Charts represent live data collected [Github 
 
 https://github.com/hgtlzyc/Resume/assets/37933183/db861868-7ad5-4896-bcd6-d081b357ec66
 
+ - SwiftUI
+ - WidgetKit
+ - CoreLocation
+ - Combine
+
+
 # MultiColorMapOverlay [Github Repo](https://github.com/hgtlzyc/MultiColorMapOverlay)
 *lines will be smoother with actual data points collected from device
 <br />
 <br/>
 ![ScreenRecording](https://github.com/hgtlzyc/Resume/assets/37933183/30a08b39-f5bc-4cdb-9222-9ddcb3c20e20)
 
+ - UIKit
+ - MapKit
+ - CoreGraphics
 
 # Pokemon Display [Github Repo](https://github.com/hgtlzyc/PokemonDisplay)
 
