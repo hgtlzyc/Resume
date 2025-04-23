@@ -18,7 +18,7 @@ Contact Me: hgtlzycwk@gmail.com
 
 <br />
 
-#### Note: Focused on self-learning over the past two years through books, videos, and articles.
+## Projects
 
 # Live Activity
 tracking GPS infos and using Swift Charts represent live data collected [Github Repo](https://github.com/hgtlzyc/LiveActivitySandboxes)
