@@ -18,7 +18,24 @@ Contact Me: hgtlzycwk@gmail.com
 
 <br />
 
+### Car Services Log [AppStore Link](https://apps.apple.com/us/app/car-services-log/id6503080865)
+<img width="907" alt="image" src="https://github.com/user-attachments/assets/47c05eff-1a6a-4e16-983f-542dc423761b" />
+
+<br />
+
+ - SwiftUI
+ - Swift Charts
+ - SwiftData
+ - iCloud
+ - RevenueCat
+ - AdMob
+ - Localization
+
+<br />
+
 ## Projects
+
+### SwiftUI Docs Study Notes [Github Repo](https://github.com/hgtlzyc/LXSwiftUIDocStudy/blob/main/A01SwiftUIDocNotes.swift)
 
 # Live Activity
 tracking GPS infos and using Swift Charts represent live data collected [Github Repo](https://github.com/hgtlzyc/LiveActivitySandboxes)
@@ -27,6 +44,7 @@ https://github.com/hgtlzyc/Resume/assets/37933183/db861868-7ad5-4896-bcd6-d081b3
 
  - SwiftUI
  - WidgetKit
+ - LiveActivity
  - CoreLocation
  - Combine
 
