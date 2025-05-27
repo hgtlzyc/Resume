@@ -38,7 +38,7 @@ Contact Me: hgtlzycwk@gmail.com
 ### SwiftUI Docs Study Notes [Github Repo](https://github.com/hgtlzyc/LXSwiftUIDocStudy/blob/main/A01SwiftUIDocNotes.swift)
 
 # Live Activity
-tracking GPS infos and using Swift Charts represent live data collected [Github Repo](https://github.com/hgtlzyc/LiveActivitySandboxes)
+tracking GPS infos and using Swift Charts represent live data collected
 
 https://github.com/hgtlzyc/Resume/assets/37933183/db861868-7ad5-4896-bcd6-d081b357ec66
 
@@ -49,7 +49,7 @@ https://github.com/hgtlzyc/Resume/assets/37933183/db861868-7ad5-4896-bcd6-d081b3
  - Combine
 
 
-# MultiColorMapOverlay [Github Repo](https://github.com/hgtlzyc/MultiColorMapOverlay)
+# MultiColorMapOverlay
 *lines will be smoother with actual data points collected from device
 <br />
 <br/>
